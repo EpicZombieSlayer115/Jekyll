@@ -18,6 +18,8 @@ Run a supported Call of Duty title, then run `Jekyll.UI.exe` and allow the progr
 
 -   Localize
 -   Raw Files
+-   Script Files\*
+-   Key/Value Pairs
 
 Currently not available for public release.
 
