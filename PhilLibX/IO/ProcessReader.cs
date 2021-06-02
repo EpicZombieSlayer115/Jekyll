@@ -23,7 +23,7 @@
 // File: IO/ProcessReader.cs
 // Author: Philip/Scobalula
 // Description: A class to help with reading the memory of other processes.
-using StringDecrypt0r;
+using QDecryption;
 using System;
 using System.Diagnostics;
 
@@ -189,9 +189,9 @@ namespace PhilLibX.IO
         /// <param name="address">Memory Address</param>
         /// <param name="bufferSize">Buffer Read Size</param>
         /// <returns>Resulting String</returns>
-        public string ReadIW8EncryptedString(long address, int bufferSize = 3072, bool nullCheck = false)
+        public string ReadWZEncryptedString(long address, byte inputLength, bool nullCheck = false)
         {
-            string decrypted = Decrypt0r.DecryptStringIW8(ReadBytes(address, bufferSize));
+            string decrypted = Decrypt0r.DecryptWZString(ReadBytes(address, inputLength));
 
             if (nullCheck == true)
             {
@@ -210,9 +210,9 @@ namespace PhilLibX.IO
         /// <param name="address">Memory Address</param>
         /// <param name="bufferSize">Buffer Read Size</param>
         /// <returns>Resulting String</returns>
-        public string ReadT9EncryptedString(long address, int bufferSize = 3072, bool nullCheck = false)
+        public string ReadCWEncryptedString(long address, byte inputLength, bool nullCheck = false)
         {
-            string decrypted = Decrypt0r.DecryptStringT9(ReadBytes(address, bufferSize));
+            string decrypted = CODDecryptor.DecryptCWString(ReadBytes(address, inputLength));
 
             if (nullCheck == true)
             {
