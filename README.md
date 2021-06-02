@@ -34,6 +34,10 @@ Currently not available for public release.
 -   String Tables
 -   TrueType Fonts
 
+### Call of Duty: Black Ops 4
+
+-   Raw Files
+
 ### Call of Duty: WWII
 
 -   Localize
