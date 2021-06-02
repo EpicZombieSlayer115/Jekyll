@@ -20,13 +20,14 @@ Run a supported Call of Duty title, then run `Jekyll.UI.exe` and allow the progr
 -   Raw Files
 -   Script Files\*
 -   Key/Value Pairs
+-   String Tables
 
-Currently not available for public release.
+Unavailble for public release until EOL.
 
 ### Call of Duty: Modern Warfare
 
 -   Key/Value Pairs
--   Localize
+-   Localize\**
 -   Lua Files\*
 -   Map Entities
 -   Raw Files
@@ -34,6 +35,7 @@ Currently not available for public release.
 -   String Tables
 -   TrueType Fonts
 
+**Localize decryption unavailable until warzone EOL.
 ### Call of Duty: Black Ops 4
 
 -   Raw Files
